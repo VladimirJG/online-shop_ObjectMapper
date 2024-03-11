@@ -1,0 +1,24 @@
+# shop-ObjectMapperTest
+
+###
+# @name GetOrderById
+GET http://localhost:8080/order/1
+
+###
+# @name GetAllProduct
+GET http://localhost:8080/shop
+
+###
+# @name GetProductById
+GET http://localhost:8080/shop/1
+
+###
+# @name CreateProduct
+POST http://localhost:8080/shop
+Content-Type: text/plain
+
+{"name":"cap333","description":"baseball cap333","price":550,"count":2}
+
+###
+# @name DeleteProduct
+DELETE http://localhost:8080/shop/10

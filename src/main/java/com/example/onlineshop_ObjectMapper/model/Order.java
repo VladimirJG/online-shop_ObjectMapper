@@ -19,11 +19,11 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
-    @Column(name = "deliveryAddress")
+    @Column(name = "delivery_address")
     private String deliveryAddress;
-    @Column(name = "totalCost")
+    @Column(name = "total_cost")
     private int totalCost;
-    @Column(name = "orderStatus")
+    @Column(name = "order_status")
     @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus;
     @ManyToOne
